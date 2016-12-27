@@ -1,14 +1,81 @@
 Package.describe({
-  summary: 'Widget for displaying a calendar date picker',
-  version: '1.3.0',
-  name: 'deepwell:bootstrap-datepicker2',
-  git: 'https://github.com/deepwell/meteor-bootstrap-datepicker.git'
+    summary: 'Widget for displaying a calendar date picker',
+    version: '1.6.4',
+    name: 'cezarybutler:bootstrap-datepicker',
+    git: 'https://github.com/Programisci/meteor-bootstrap-datepicker'
 });
 
 Package.onUse(function (api, where) {
-  api.versionsFrom('METEOR@0.9.0');
-  api.use('jquery');
+    // api.versionsFrom('1.4.2.3');
+    api.use('jquery@1.7.4');
 
-  api.addFiles('lib/js/bootstrap-datepicker.js', 'client');
-  api.addFiles('lib/css/datepicker.css', 'client');
+    api.addFiles('lib/js/bootstrap-datepicker.js', 'client');
+    api.addFiles('lib/css/bootstrap-datepicker.standalone.css', 'client');
+    api.addFiles(
+        ['lib/locales/bootstrap-datepicker.ar.min.js',
+            'lib/locales/bootstrap-datepicker.az.min.js',
+            'lib/locales/bootstrap-datepicker.bg.min.js',
+            'lib/locales/bootstrap-datepicker.bs.min.js',
+            'lib/locales/bootstrap-datepicker.ca.min.js',
+            'lib/locales/bootstrap-datepicker.cs.min.js',
+            'lib/locales/bootstrap-datepicker.cy.min.js',
+            'lib/locales/bootstrap-datepicker.da.min.js',
+            'lib/locales/bootstrap-datepicker.de.min.js',
+            'lib/locales/bootstrap-datepicker.el.min.js',
+            'lib/locales/bootstrap-datepicker.en-AU.min.js',
+            'lib/locales/bootstrap-datepicker.en-GB.min.js',
+            'lib/locales/bootstrap-datepicker.eo.min.js',
+            'lib/locales/bootstrap-datepicker.es.min.js',
+            'lib/locales/bootstrap-datepicker.et.min.js',
+            'lib/locales/bootstrap-datepicker.eu.min.js',
+            'lib/locales/bootstrap-datepicker.fa.min.js',
+            'lib/locales/bootstrap-datepicker.fi.min.js',
+            'lib/locales/bootstrap-datepicker.fo.min.js',
+            'lib/locales/bootstrap-datepicker.fr.min.js',
+            'lib/locales/bootstrap-datepicker.fr-CH.min.js',
+            'lib/locales/bootstrap-datepicker.gl.min.js',
+            'lib/locales/bootstrap-datepicker.he.min.js',
+            'lib/locales/bootstrap-datepicker.hr.min.js',
+            'lib/locales/bootstrap-datepicker.hu.min.js',
+            'lib/locales/bootstrap-datepicker.hy.min.js',
+            'lib/locales/bootstrap-datepicker.id.min.js',
+            'lib/locales/bootstrap-datepicker.is.min.js',
+            'lib/locales/bootstrap-datepicker.it.min.js',
+            'lib/locales/bootstrap-datepicker.it-CH.min.js',
+            'lib/locales/bootstrap-datepicker.ja.min.js',
+            'lib/locales/bootstrap-datepicker.ka.min.js',
+            'lib/locales/bootstrap-datepicker.kh.min.js',
+            'lib/locales/bootstrap-datepicker.kk.min.js',
+            'lib/locales/bootstrap-datepicker.ko.min.js',
+            'lib/locales/bootstrap-datepicker.kr.min.js',
+            'lib/locales/bootstrap-datepicker.lt.min.js',
+            'lib/locales/bootstrap-datepicker.lv.min.js',
+            'lib/locales/bootstrap-datepicker.me.min.js',
+            'lib/locales/bootstrap-datepicker.mk.min.js',
+            'lib/locales/bootstrap-datepicker.mn.min.js',
+            'lib/locales/bootstrap-datepicker.ms.min.js',
+            'lib/locales/bootstrap-datepicker.nb.min.js',
+            'lib/locales/bootstrap-datepicker.nl.min.js',
+            'lib/locales/bootstrap-datepicker.nl-BE.min.js',
+            'lib/locales/bootstrap-datepicker.no.min.js',
+            'lib/locales/bootstrap-datepicker.pl.min.js',
+            'lib/locales/bootstrap-datepicker.pt.min.js',
+            'lib/locales/bootstrap-datepicker.pt-BR.min.js',
+            'lib/locales/bootstrap-datepicker.ro.min.js',
+            'lib/locales/bootstrap-datepicker.rs.min.js',
+            'lib/locales/bootstrap-datepicker.rs-latin.min.js',
+            'lib/locales/bootstrap-datepicker.ru.min.js',
+            'lib/locales/bootstrap-datepicker.sk.min.js',
+            'lib/locales/bootstrap-datepicker.sl.min.js',
+            'lib/locales/bootstrap-datepicker.sq.min.js',
+            'lib/locales/bootstrap-datepicker.sr.min.js',
+            'lib/locales/bootstrap-datepicker.sr-latin.min.js',
+            'lib/locales/bootstrap-datepicker.sv.min.js',
+            'lib/locales/bootstrap-datepicker.sw.min.js',
+            'lib/locales/bootstrap-datepicker.th.min.js',
+            'lib/locales/bootstrap-datepicker.tr.min.js',
+            'lib/locales/bootstrap-datepicker.uk.min.js',
+            'lib/locales/bootstrap-datepicker.vi.min.js',
+            'lib/locales/bootstrap-datepicker.zh-CN.min.js',
+            'lib/locales/bootstrap-datepicker.zh-TW.min.js'], 'client');
 });
